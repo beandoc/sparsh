@@ -26,7 +26,31 @@ const navLinks = [
 const Sidebar: React.FC = () => {
     const location = useLocation();
     const [isMobileOpen, setIsMobileOpen] = useState(false);
-    const [isCollapsed, setIsCollapsed] = useState(false);
+    const [isCollapsed, setIsCollapsed] = useState(() => {
+        const saved = localStorage.getItem('sparsh_sidebar_collapsed');
+        return saved === 'true';
+    });
+
+    // Handle Route Changes & Auto-Collapse for focus
+    useEffect(() => {
+        // Close mobile drawer on navigation
+        setIsMobileOpen(false);
+
+        // Auto-collapse on smaller desktop screens when navigating to content-heavy pages
+        const isSmallDesktop = window.innerWidth > 1024 && window.innerWidth < 1300;
+        const isFocusPage = location.pathname.includes('/education') || location.pathname.includes('/supportive-care');
+
+        if (isSmallDesktop && isFocusPage) {
+            setIsCollapsed(true);
+        }
+    }, [location.pathname]);
+
+    // Persist collapse state
+    const handleToggleCollapse = () => {
+        const newState = !isCollapsed;
+        setIsCollapsed(newState);
+        localStorage.setItem('sparsh_sidebar_collapsed', String(newState));
+    };
 
     // Prevent scrolling when mobile menu is open
     useEffect(() => {
@@ -151,7 +175,7 @@ const Sidebar: React.FC = () => {
                 <div className="sidebar-footer">
                     <button
                         className="collapse-toggle"
-                        onClick={() => setIsCollapsed(!isCollapsed)}
+                        onClick={handleToggleCollapse}
                         aria-label={isCollapsed ? "Expand sidebar" : "Collapse sidebar"}
                     >
                         {isCollapsed ? <ChevronRight size={20} /> : <ChevronLeft size={20} />}
