@@ -415,5 +415,442 @@ export const education_modules: ModuleContent[] = [
                 ]
             }
         ]
+    },
+    {
+        id: 'module-11',
+        title: 'Module 11: Understanding the Cellular Breakdown',
+        description: 'How cancer cells differ from normal cells and how they survive.',
+        sections: [
+            {
+                title: '11.1 The Definition of Cancer',
+                content: [
+                    {
+                        subtitle: 'Uncontrolled Growth',
+                        text: 'Cancer is a disease where body cells grow uncontrollably and spread. Normally, cells divide to form new ones as needed. Cancer happens when this orderly process breaks down and abnormal cells multiply.'
+                    }
+                ]
+            },
+            {
+                title: '11.2 Cancer Cells vs. Normal Cells',
+                content: [
+                    {
+                        subtitle: 'Distinctive Behaviors',
+                        list: [
+                            'Independence: They grow without signals from the body.',
+                            'Immortality: They ignore "stop" signs like programmed cell death (apoptosis).',
+                            'Invasion: They move into nearby tissues and distant locations.',
+                            'Angiogenesis: They trick the body into growing blood vessels to supply the tumor with oxygen and nutrients.',
+                            'Immune Evasion: They can hide from or "convince" the immune system to protect them.'
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        id: 'module-12',
+        title: 'Module 12: Why Cancer Develops',
+        description: 'The genetic basis of cancer and the "drivers" behind it.',
+        sections: [
+            {
+                title: '12.1 A Genetic Disease',
+                content: [
+                    {
+                        subtitle: 'DNA Changes',
+                        text: 'Cancer is caused by changes to genes that control cell growth. These can happen from division errors, environmental damage (tobacco, UV rays), or heredity.'
+                    }
+                ]
+            },
+            {
+                title: '12.2 The Three Main "Drivers"',
+                content: [
+                    {
+                        subtitle: 'Proto-oncogenes',
+                        text: 'The "gas pedals" for growth. When they become oncogenes, they stay "on," causing uncontrolled growth.'
+                    },
+                    {
+                        subtitle: 'Tumor Suppressor Genes',
+                        text: 'The "brakes." When these are inactivated, cells divide without stopping.'
+                    },
+                    {
+                        subtitle: 'DNA Repair Genes',
+                        text: 'The "mechanics." When these fail, mutations pile up, making cells more likely to become cancerous.'
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        id: 'module-13',
+        title: 'Module 13: Tissue Changes and Metastasis',
+        description: 'Recognizing non-cancerous changes and understanding how cancer spreads.',
+        sections: [
+            {
+                title: '13.1 Non-Cancerous Tissue Changes',
+                content: [
+                    {
+                        subtitle: 'Hyperplasia',
+                        text: 'Rapid cell multiplication where tissue still looks normal. Often caused by irritation.'
+                    },
+                    {
+                        subtitle: 'Dysplasia',
+                        text: 'Cells look abnormal under a microscope. This is a more advanced buildup and needs monitoring.'
+                    },
+                    {
+                        subtitle: 'Carcinoma in situ',
+                        text: 'Often called "Stage 0." Abnormal cells that haven\'t invaded nearby tissue yet but often require treatment.'
+                    }
+                ]
+            },
+            {
+                title: '13.2 When Cancer Spreads',
+                content: [
+                    {
+                        subtitle: 'Metastasis',
+                        text: 'Metastasis is the process where cells travel via blood or lymph to form new tumors. Even if it spreads to the lungs, a breast cancer remains "metastatic breast cancer."'
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        id: 'module-14',
+        title: 'Module 14: Glossary of Cancer Types',
+        description: 'Identifying the different categories of cancer by cell origin.',
+        sections: [
+            {
+                title: '14.1 Main Categories',
+                content: [
+                    {
+                        subtitle: 'Common Origins',
+                        list: [
+                            'Carcinoma: Starts in epithelial cells (the most common type).',
+                            'Sarcoma: Starts in bone or soft tissues like muscle and fat.',
+                            'Leukemia: Starts in blood-forming tissue (bone marrow); does not form solid tumors.',
+                            'Lymphoma: Starts in immune system cells (T cells or B cells).',
+                            'Melanoma: Starts in pigment-making cells (melanocytes).'
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        id: 'module-15',
+        title: 'Module 15: Recognising Symptoms',
+        description: 'Common signs that warrant a medical consultation.',
+        sections: [
+            {
+                title: '15.1 The Two-Week Rule',
+                content: [
+                    {
+                        subtitle: 'Persistence Matters',
+                        text: 'Many symptoms are caused by minor illnesses, injury, or benign tumors. However, if a symptom does not get better after a few weeks, see your doctor. Do not wait for pain—cancer often does not cause pain in early stages.'
+                    }
+                ]
+            },
+            {
+                title: '15.2 Key Signs to Watch',
+                content: [
+                    {
+                        subtitle: 'Physical Changes',
+                        list: [
+                            'Breast changes: Lumps, nipple discharge, or skin puckering.',
+                            'Bladder/Bowel changes: Blood in urine/stool or trouble urinating.',
+                            'Unexplained bleeding: Bruising or bleeding with no known cause.',
+                            'Eating problems: Trouble swallowing, belly pain, or persistent indigestion.',
+                            'Fatigue & Fever: Severe exhaustion that lasts, or night sweats.',
+                            'Skin changes: New moles, yellowing (jaundice), or sores that don\'t heal.',
+                            'Neurological: Persistent headaches, seizures, or vision/hearing changes.'
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        id: 'module-16',
+        title: 'Module 16: How Cancer is Diagnosed',
+        description: 'Understanding lab tests and the diagnostic workflow.',
+        sections: [
+            {
+                title: '16.1 The Diagnostic Process',
+                content: [
+                    {
+                        subtitle: 'No Single Test',
+                        text: 'Diagnosis usually involves a combination of your medical history, a physical exam, and specific tests. Results are often posted in patient portals early; always discuss them with your doctor for the full context.'
+                    }
+                ]
+            },
+            {
+                title: '16.2 Common Lab Tests',
+                content: [
+                    {
+                        subtitle: 'Blood and Fluid Analysis',
+                        list: [
+                            'CBC (Complete Blood Count): Measures red/white cells and platelets. Helps find leukemias.',
+                            'Blood Chemistry: Checks organ function (kidneys, liver) and releases of proteins or enzymes.',
+                            'Cytogenetic Analysis: Looks for broken or missing chromosomes.',
+                            'Liquid Biopsy: A blood test that searches for cancer DNA or cells released into the bloodstream.',
+                            'Tumor Markers: Substances produced at higher levels by cancer cells.'
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        id: 'module-17',
+        title: 'Module 17: Imaging Tests in Cancer',
+        description: 'Creating pictures of the inside of the body to locate tumors.',
+        sections: [
+            {
+                title: '17.1 Advanced Scans',
+                content: [
+                    {
+                        subtitle: 'Visualising the Internal Extent',
+                        list: [
+                            'CT Scan: Uses 3D X-rays to create detailed images of organs.',
+                            'MRI: Uses powerful magnets and radio waves to take slice-by-slice pictures.',
+                            'PET Scan: Highlights areas where sugar (glucose) is taken up quickly, identifying active cancer.',
+                            'Ultrasound: Uses sound wave echoes to create sonograms of tissues.',
+                            'Nuclear Scan: Uses a small amount of radioactive tracer to highlight "hot spots" in bones or organs.'
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        id: 'module-18',
+        title: 'Module 18: Understanding Biopsies',
+        description: 'The definitive procedure for confirming a cancer diagnosis.',
+        sections: [
+            {
+                title: '18.1 Why a Biopsy?',
+                content: [
+                    {
+                        subtitle: 'The Only Sure Way',
+                        text: 'A biopsy is often the only way to tell for sure if an abnormality is cancer. A pathologist examines the tissue under a microscope and writes a detailed pathology report.'
+                    }
+                ]
+            },
+            {
+                title: '18.2 How Biopsies are Done',
+                content: [
+                    {
+                        subtitle: 'Procedures',
+                        list: [
+                            'Needle Biopsy: Withdrawing tissue or fluid using a needle (common for bone marrow).',
+                            'Endoscopy: Using a lighted tube (endoscope) through a natural opening (e.g., Colonoscopy).',
+                            'Surgery: Removing part or all of an abnormal area through an operation.'
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        id: 'module-19',
+        title: 'Module 19: Staging and Next Steps',
+        description: 'Determining the extent of the cancer to plan treatment.',
+        sections: [
+            {
+                title: '19.1 What "Stage" Means',
+                content: [
+                    {
+                        subtitle: 'Factors in Staging',
+                        text: 'Stage refers to the size of the tumor and whether it has spread. This helps the doctor discuss your prognosis and choose the most effective treatment plan.'
+                    },
+                    {
+                        subtitle: 'Grade vs. Stage',
+                        text: 'While Stage looks at the extent, "Grade" looks at how abnormal the cells look and how fast they are likely to grow.'
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        id: 'module-20',
+        title: 'Module 20: Understanding Cancer Risk',
+        description: 'What increases the chances of developing cancer and how it is studied.',
+        sections: [
+            {
+                title: '20.1 Risk vs. Protection',
+                content: [
+                    {
+                        subtitle: 'Risk Factors',
+                        text: 'A risk factor is anything that increases your chance of getting a disease. While some can be controlled (like smoking), others cannot (like age or family history).'
+                    },
+                    {
+                        subtitle: 'Protective Factors',
+                        text: 'Actions or circumstances that lower your risk are called protective factors. Maintaining a healthy lifestyle is a key protective strategy.'
+                    }
+                ]
+            },
+            {
+                title: '20.2 How We Know the Risks',
+                content: [
+                    {
+                        subtitle: 'The Role of Research',
+                        text: 'Scientists use epidemiology studies to compare large groups of people. When many studies show the same pattern between a behavior and cancer, they become more confident about the risk factor.'
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        id: 'module-21',
+        title: 'Module 21: Common Risk Factors',
+        description: 'A detailed look at the most studied known and suspected risks.',
+        sections: [
+            {
+                title: '21.1 Unavoidable Factors',
+                content: [
+                    {
+                        subtitle: 'Age and Genetics',
+                        list: [
+                            'Age: The risk of most cancers increases as you grow older.',
+                            'Family History: Certain inherited genetic mutations can significantly increase risk.'
+                        ]
+                    }
+                ]
+            },
+            {
+                title: '21.2 Avoidable & Environmental Factors',
+                content: [
+                    {
+                        subtitle: 'Lifestyle and Exposure',
+                        list: [
+                            'Tobacco & Alcohol: Well-known behaviors that damage DNA.',
+                            'Sunlight & Radiation: Excessive UV exposure is a major skin cancer risk.',
+                            'Obesity & Diet: What we eat and our body weight impact chronic inflammation and hormone levels.',
+                            'Chemicals: Exposure to certain substances in the workplace or environment.',
+                            'Infectious Agents: Some viruses and bacteria can trigger cancerous changes.'
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        id: 'module-22',
+        title: 'Module 22: Prevention Strategies',
+        description: 'Proactive steps to lower your risk and stay healthy.',
+        sections: [
+            {
+                title: '22.1 Taking Action',
+                content: [
+                    {
+                        subtitle: 'Healthy Foundations',
+                        text: 'Prevention involves lowering your risk through lifestyle choices, avoiding known carcinogens, and attending regular screenings.'
+                    },
+                    {
+                        subtitle: 'Medical Prevention',
+                        text: 'In some cases, vaccines (like the HPV vaccine) or specific medicines can prevent cancer from developing in the first place.'
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        id: 'module-23',
+        title: 'Module 23: Living Your Days Well',
+        description: 'Maintaining routine and choosing activities that bring pleasure.',
+        sections: [
+            {
+                title: '23.1 Maintaining Your Routine',
+                content: [
+                    {
+                        subtitle: 'Stay Engaged',
+                        text: 'If you feel well enough, try to keep up with your daily routine. This includes working, spending time with family, and participating in hobbies you love. Cancer is an opportunity to re-evaluate how you spend your time—focus on what truly makes you happy.'
+                    }
+                ]
+            },
+            {
+                title: '23.2 Balancing Energy',
+                content: [
+                    {
+                        subtitle: 'Avoid Over-exhaustion',
+                        text: 'It is important to have fun, but be careful not to tire yourself out too much. Severe fatigue can sometimes lead to localized depression. Make sure to get enough rest so you can genuinely enjoy your favorite activities.'
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        id: 'module-24',
+        title: 'Module 24: The Healing Power of Humor',
+        description: 'How laughter and smiles can combat stress and provide a sense of control.',
+        sections: [
+            {
+                title: '24.1 Why Humor Helps',
+                content: [
+                    {
+                        subtitle: 'Physiological Relief',
+                        text: 'When you laugh, your brain releases chemicals that produce pleasure and relax your muscles. Even a simple smile can help fight off stressful or intrusive thoughts.'
+                    }
+                ]
+            },
+            {
+                title: '24.2 Bringing Humor into Your Life',
+                content: [
+                    {
+                        subtitle: 'Practical Fun',
+                        list: [
+                            'Entertainment: Watch funny movies, TV shows, or listen to comedy podcasts.',
+                            'Cards & Calendars: Ask friends for funny cards or keep a humor-themed desk calendar.',
+                            'Pets & Kids: Observe the amusing and spontaneous things children and pets do.',
+                            'Self-Compassion: Learn to laugh at the awkward or unexpected situations cancer might bring.'
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        id: 'module-25',
+        title: 'Module 25: Exercise and Movement',
+        description: 'Reducing fatigue and improving strength through physical activity.',
+        sections: [
+            {
+                title: '25.1 Benefits of Staying Active',
+                content: [
+                    {
+                        subtitle: 'Better Daily Function',
+                        list: [
+                            'Physical Health: Speeds healing, tones muscles, and decreases constipation.',
+                            'Mental Clarity: Boosts mental health and helps free your mind of bad thoughts.',
+                            'Energy & Appetite: Paradoxically, a bit of daily movement can decrease fatigue and increase your appetite.'
+                        ]
+                    }
+                ]
+            },
+            {
+                title: '25.2 Getting Started',
+                content: [
+                    {
+                        subtitle: 'Choice and Safety',
+                        text: 'Always get your doctor\'s approval first. Activities like walking, yoga, swimming, or biking are excellent. If you are bed-bound, there are still gentle movements you can perform to keep your blood flowing.'
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        id: 'module-26',
+        title: 'Module 26: Setting Goals for the Future',
+        description: 'Building resilience by looking beyond treatment.',
+        sections: [
+            {
+                title: '26.1 Working Toward Something',
+                content: [
+                    {
+                        subtitle: 'The Power of Milestones',
+                        text: 'Setting goals helps you look beyond your current treatment. This might be planning a future trip, learning a new skill, or looking forward to a family wedding or the birth of a grandchild. Having a purpose keeps your spirit focused on recovery.'
+                    }
+                ]
+            }
+        ]
     }
 ];

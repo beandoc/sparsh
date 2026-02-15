@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ChevronDown, ChevronUp, Book, User, Activity, DollarSign, Brain, Heart, Users, ShieldCheck } from 'lucide-react';
+import { ChevronDown, ChevronUp, Book, User, Activity, DollarSign, Brain, Heart, Users, ShieldCheck, Microscope, Zap, Share2, Database, Stethoscope, FlaskConical, Camera, Syringe, Layers, AlertTriangle, Apple, Sun, Smile, Dumbbell, Flag } from 'lucide-react';
 import { education_modules } from '../data/educationModules';
 import type { ModuleContent } from '../data/educationModules';
 import './Page.css';
@@ -68,6 +68,22 @@ const ModuleCard = ({ module, isExpanded, onToggle, index }: { module: ModuleCon
                         {index === 7 && <Heart size={24} />}
                         {index === 8 && <Users size={24} />}
                         {index === 9 && <ShieldCheck size={24} />}
+                        {index === 10 && <Microscope size={24} />}
+                        {index === 11 && <Zap size={24} />}
+                        {index === 12 && <Share2 size={24} />}
+                        {index === 13 && <Database size={24} />}
+                        {index === 14 && <Stethoscope size={24} />}
+                        {index === 15 && <FlaskConical size={24} />}
+                        {index === 16 && <Camera size={24} />}
+                        {index === 17 && <Syringe size={24} />}
+                        {index === 18 && <Layers size={24} />}
+                        {index === 19 && <AlertTriangle size={24} />}
+                        {index === 20 && <Apple size={24} />}
+                        {index === 21 && <ShieldCheck size={24} />}
+                        {index === 22 && <Sun size={24} />}
+                        {index === 23 && <Smile size={24} />}
+                        {index === 24 && <Dumbbell size={24} />}
+                        {index === 25 && <Flag size={24} />}
                     </div>
                     <div>
                         <h2 className="module-title">{module.title}</h2>

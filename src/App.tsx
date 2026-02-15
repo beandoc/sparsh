@@ -7,6 +7,7 @@ import PalliativeCare from './pages/PalliativeCare';
 import CancerOverview from './pages/CancerOverview';
 import Toolkit from './pages/Toolkit';
 import SupportiveOncology from './pages/SupportiveOncology';
+import Guides from './pages/Guides';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="/cancer-overview" element={<CancerOverview />} />
         <Route path="/toolkit" element={<Toolkit />} />
         <Route path="/supportive-care" element={<SupportiveOncology />} />
+        <Route path="/guides" element={<Guides />} />
       </Routes>
     </Router>
   );

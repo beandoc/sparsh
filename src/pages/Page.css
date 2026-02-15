@@ -38,6 +38,31 @@
     width: 100%;
 }
 
+.resources-layout-grid {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 2rem;
+    align-items: start;
+}
+
+.resources-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+@media (max-width: 1024px) {
+    .resources-layout-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .resources-sidebar {
+        flex-direction: row;
+        overflow-x: auto;
+        padding-bottom: 1rem;
+    }
+}
+
 .glass-panel {
     background: white;
     /* Stronger background for light mode */

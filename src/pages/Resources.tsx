@@ -55,9 +55,9 @@ const Resources: React.FC = () => {
                     </p>
                 </motion.div>
 
-                <div style={{ display: 'grid', gridTemplateColumns: '1fr 3fr', gap: '2rem', alignItems: 'start' }} className="resources-layout">
+                <div className="resources-layout-grid">
                     {/* Category Navigation */}
-                    <aside style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
+                    <aside className="resources-sidebar">
                         {patient_questions.map((cat) => {
                             const NavIcon = IconMap[cat.icon];
                             return (
@@ -193,12 +193,12 @@ const Resources: React.FC = () => {
             <Footer />
 
             <style>{`
-        @media (max-width: 900px) {
-            .resources-layout {
-                grid-template-columns: 1fr !important;
-            }
-        }
-      `}</style>
+                @media (max-width: 1024px) {
+                    .resources-sidebar button {
+                        white-space: nowrap;
+                    }
+                }
+            `}</style>
         </div>
     );
 };
