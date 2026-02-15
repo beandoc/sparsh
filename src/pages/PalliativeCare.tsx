@@ -23,7 +23,12 @@ import {
     UserCircle,
     Activity,
     Wind,
-    Compass
+    Compass,
+    AlertTriangle,
+    MinusCircle,
+    MapPin,
+    Users2,
+    PieChart
 } from 'lucide-react';
 import './Page.css';
 import './PalliativeCare.css';
@@ -104,10 +109,39 @@ const PalliativeCare: React.FC = () => {
                         </div>
                         <div className="highlight">
                             <Clock size={16} />
-                            <span>The team spends as much time as necessary with you and your loved ones.</span>
+                            <span>ASCO (American Society of Clinical Oncology) encourages the integration of palliative care services into all standard oncology practices.</span>
                         </div>
                     </motion.section>
                 </div>
+
+                {/* Myths vs Reality Section */}
+                <section className="myths-reality-section">
+                    <h2 className="sub-section-title">Myths vs. Reality</h2>
+                    <p className="section-subtitle">A 2020 study showed 87% of people who know the term "Palliative Care" still have misconceptions.</p>
+                    <div className="myths-grid">
+                        <div className="myth-card">
+                            <div className="myth-header">
+                                <AlertTriangle className="icon-myth" size={20} />
+                                <span>Myth: It's only for the end of life</span>
+                            </div>
+                            <p className="reality-text"><strong>Reality:</strong> 44% of people associate it with death, but it is actually beneficial at <em>any stage</em> of a serious illness.</p>
+                        </div>
+                        <div className="myth-card">
+                            <div className="myth-header">
+                                <MinusCircle className="icon-myth" size={20} />
+                                <span>Myth: It means "Giving Up"</span>
+                            </div>
+                            <p className="reality-text"><strong>Reality:</strong> Palliative care can be given <em>concurrently</em> with curative treatments, potentially extending survival.</p>
+                        </div>
+                        <div className="myth-card">
+                            <div className="myth-header">
+                                <ArrowRightLeft className="icon-myth" size={20} />
+                                <span>Myth: It's the same as Hospice</span>
+                            </div>
+                            <p className="reality-text"><strong>Reality:</strong> 38% equate the two. Unlike hospice, palliative care can start at diagnosis and continue during active treatment.</p>
+                        </div>
+                    </div>
+                </section>
 
                 {/* Global Statistics / Key Facts */}
                 <section className="stats-section">
@@ -121,12 +155,17 @@ const PalliativeCare: React.FC = () => {
                         <div className="stat-card accent">
                             <AlertCircle className="stat-icon" />
                             <div className="stat-value">14%</div>
-                            <div className="stat-label">Only 14% currently receive the care they need</div>
+                            <div className="stat-label">Only 14% of those in need receive global services</div>
                         </div>
                         <div className="stat-card">
-                            <ShieldCheck className="stat-icon" />
-                            <div className="stat-value">98%</div>
-                            <div className="stat-label">Children in need in low-middle income countries</div>
+                            <MapPin className="stat-icon" />
+                            <div className="stat-value">17%</div>
+                            <div className="stat-label">Limited access in rural hospitals</div>
+                        </div>
+                        <div className="stat-card">
+                            <Users2 className="stat-icon" />
+                            <div className="stat-value">{">"}80%</div>
+                            <div className="stat-label">Programs report insufficient capacity for demand</div>
                         </div>
                     </div>
                 </section>
@@ -156,6 +195,65 @@ const PalliativeCare: React.FC = () => {
                         </div>
                     </div>
                 </motion.section>
+
+                {/* Pain Management & Cost Benefit Section */}
+                <div className="palliative-grid" style={{ marginBottom: '4rem' }}>
+                    <motion.section
+                        className="glass-panel"
+                        initial={{ opacity: 0, scale: 0.98 }}
+                        whileInView={{ opacity: 1, scale: 1 }}
+                        style={{ padding: '2.5rem' }}
+                    >
+                        <div className="section-icon-row">
+                            <Stethoscope size={32} />
+                            <h2>Pain Management Expertise</h2>
+                        </div>
+                        <p>
+                            Many survivors worry about addiction or stigma when prescribed opioids.
+                            Palliative care teams are specialized resources for navigating these concerns,
+                            optimizing pain regimens through expert provider-patient communication.
+                        </p>
+                    </motion.section>
+
+                    <motion.section
+                        className="glass-panel"
+                        initial={{ opacity: 0, scale: 0.98 }}
+                        whileInView={{ opacity: 1, scale: 1 }}
+                        style={{ padding: '2.5rem' }}
+                    >
+                        <div className="section-icon-row">
+                            <DollarSign size={32} />
+                            <h2>Reduction in Medical Costs</h2>
+                        </div>
+                        <p>
+                            Research shows that beginning palliative care within <strong>three days of hospital admission</strong>
+                            reduces overall costs for all adults, with even greater savings for cancer patients.
+                        </p>
+                    </motion.section>
+                </div>
+
+                {/* Equity and Awareness Gaps */}
+                <section className="awareness-gap-section glass-panel">
+                    <div className="equity-content">
+                        <div className="text-content">
+                            <div className="badge secondary">Awareness & Equity</div>
+                            <h2>Addressing the Knowledge Gap</h2>
+                            <p>
+                                <strong>66% of survivors</strong> report no knowledge of palliative care.
+                                Furthermore, survivors of color and Hispanic communities are significantly
+                                less likely to report knowledge or have access to these services.
+                            </p>
+                            <p>
+                                Addressing these communication barriers and trust issues is a priority to ensure
+                                equitable access to clinical benefits.
+                            </p>
+                        </div>
+                        <div className="gap-graphic">
+                            <PieChart size={120} opacity={0.1} />
+                        </div>
+                    </div>
+                </section>
+
 
                 {/* Palliative vs Hospice Section */}
                 <section className="comparison-section">

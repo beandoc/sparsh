@@ -586,3 +586,84 @@
         grid-template-columns: 1fr;
     }
 }
+
+/* Myths vs Reality */
+.myths-reality-section {
+    margin-bottom: 6rem;
+}
+
+.myths-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.myth-card {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 20px;
+    border: 1px solid var(--bg-tertiary);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+.myth-header {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
+    color: #b91c1c;
+    font-weight: 800;
+}
+
+.icon-myth {
+    color: #ef4444;
+}
+
+.reality-text {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+.reality-text strong {
+    color: #15803d;
+}
+
+/* Awareness Gap section */
+.awareness-gap-section {
+    padding: 4rem !important;
+    background: linear-gradient(135deg, white 0%, #fef2f2 100%) !important;
+    border: 1px solid #fee2e2 !important;
+    margin-bottom: 6rem;
+}
+
+.equity-content {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+
+.gap-graphic {
+    flex-shrink: 0;
+    background: rgba(239, 68, 68, 0.05);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.badge.secondary {
+    background: #fee2e2;
+    color: #b91c1c;
+}
+
+@media (max-width: 900px) {
+
+    .myths-grid,
+    .equity-content {
+        grid-template-columns: 1fr;
+        flex-direction: column;
+    }
+}
