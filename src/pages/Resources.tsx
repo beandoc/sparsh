@@ -11,12 +11,13 @@ import {
     Clock,
     HeartHandshake,
     CheckCircle2,
-    Copy
+    Copy,
+    type LucideIcon
 } from 'lucide-react';
 import { patient_questions } from '../data/patientQuestions';
 import './Page.css';
 
-const IconMap: Record<string, any> = {
+const IconMap: Record<string, LucideIcon> = {
     FileText: FileText,
     Stethoscope: Stethoscope,
     Activity: Activity,

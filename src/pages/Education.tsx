@@ -4,6 +4,7 @@ import Footer from '../components/Footer';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronDown, ChevronUp, Book, User, Activity, DollarSign } from 'lucide-react';
 import { education_modules } from '../data/educationModules';
+import type { ModuleContent } from '../data/educationModules';
 import './Page.css';
 import './Education.css';
 
@@ -46,7 +47,7 @@ const Education: React.FC = () => {
     );
 };
 
-const ModuleCard = ({ module, isExpanded, onToggle, index }: { module: any, isExpanded: boolean, onToggle: () => void, index: number }) => {
+const ModuleCard = ({ module, isExpanded, onToggle, index }: { module: ModuleContent, isExpanded: boolean, onToggle: () => void, index: number }) => {
     return (
         <motion.div
             className={`module-card glass-panel ${isExpanded ? 'active' : ''}`}
@@ -82,11 +83,11 @@ const ModuleCard = ({ module, isExpanded, onToggle, index }: { module: any, isEx
                         transition={{ duration: 0.3 }}
                     >
                         <div className="module-content-inner">
-                            {module.sections.map((section: any, idx: number) => (
+                            {module.sections.map((section, idx: number) => (
                                 <div key={idx} className="module-section">
                                     <h3 className="section-subtitle">{section.title}</h3>
                                     <div className="section-body">
-                                        {section.content.map((item: any, i: number) => (
+                                        {section.content.map((item, i: number) => (
                                             <div key={i} className="content-block">
                                                 {item.subtitle && <h4 className="content-heading">{item.subtitle}</h4>}
                                                 {item.text && <p className="content-text">{item.text}</p>}

@@ -32,7 +32,7 @@ const SupportiveOncology: React.FC = () => {
     const [flowState, setFlowState] = useState<FlowState>('check');
     const [responses, setResponses] = useState<Record<string, boolean>>({});
 
-    const categories: { id: SupportiveModule['category']; label: string; icon: any }[] = [
+    const categories: { id: SupportiveModule['category']; label: string; icon: React.ReactNode }[] = [
         { id: 'Emotional', label: 'Emotional Wellness', icon: <Heart size={20} /> },
         { id: 'Physical', label: 'Physical Symptoms', icon: <Activity size={20} /> },
         { id: 'Practical', label: 'Practical & Financial', icon: <Coins size={20} /> },
