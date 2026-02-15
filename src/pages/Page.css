@@ -141,9 +141,36 @@
     color: white !important;
 }
 
-/* Only where intentional */
 .bg-dark {
     background-color: #1f2937;
 }
 
-/* Only where intentional */
+@media (max-width: 768px) {
+    .main-content {
+        padding: 6rem 1rem 3rem;
+    }
+
+    .page-title {
+        font-size: 2.25rem;
+    }
+
+    .section-desc {
+        font-size: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+        gap: 1.25rem;
+    }
+
+    .glass-panel {
+        padding: 1.25rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .page-title {
+        font-size: 1.85rem;
+    }
+}

@@ -852,5 +852,207 @@ export const education_modules: ModuleContent[] = [
                 ]
             }
         ]
+    },
+    {
+        id: 'module-27',
+        title: 'Module 27: Understanding Palliative Care',
+        description: 'An approach that improves quality of life by preventing and relieving suffering.',
+        sections: [
+            {
+                title: '27.1 Palliative Care: The Core Truths',
+                content: [
+                    {
+                        subtitle: 'The WHO Definition',
+                        text: 'Palliative care is an approach that improves the quality of life of patients and their families facing life‑threatening illness, through prevention and relief of suffering by early identification and treatment of pain and other physical, psychosocial, and spiritual problems.'
+                    },
+                    {
+                        subtitle: 'Key Elements',
+                        list: [
+                            'Focuses on quality of life, not just length of life.',
+                            'Provides relief from pain and other distressing symptoms.',
+                            'Regards dying as a normal process and neither hastens nor postpones death.',
+                            'Integrates psychological and spiritual aspects of care.',
+                            'Offers a support system for families, including bereavement support.',
+                            'Uses an interprofessional team (doctors, nurses, social workers, etc.).'
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        id: 'module-28',
+        title: 'Module 28: Why Early Palliative Care Matters',
+        description: 'Evidence-based benefits of starting supportive care early in the cancer journey.',
+        sections: [
+            {
+                title: '28.1 The Evidence Base',
+                content: [
+                    {
+                        subtitle: 'Improved Outcomes',
+                        text: 'Starting palliative care early—ideally within 8 weeks of diagnosis—is proven to improve mood, global quality of life, and symptom burden. It reduces depression and anxiety compared with usual care.'
+                    },
+                    {
+                        subtitle: 'Care Alignment',
+                        text: 'Patients report a better understanding of their prognosis and more care consistent with their values when palliative teams are involved early.'
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        id: 'module-29',
+        title: 'Module 29: Symptom Masterclass: Pain and Breathlessness',
+        description: 'Managing the most common physical challenges with precision.',
+        sections: [
+            {
+                title: '29.1 Mastering Pain Control',
+                content: [
+                    {
+                        subtitle: 'The 3-Step Ladder',
+                        text: 'Pain is managed systematically: from non-opioids like paracetamol for mild pain, to strong opioids like morphine for severe pain. Most cancer pain can be controlled if medication is taken regularly.'
+                    },
+                    {
+                        subtitle: 'Pain Myths',
+                        list: [
+                            'Addiction is very rare when opioids are used supervised for cancer pain.',
+                            'Taking pain medicine early is a sign of taking control, not "giving up".',
+                            'Side effects like constipation and nausea are proactively managed.'
+                        ]
+                    }
+                ]
+            },
+            {
+                title: '29.2 Managing Breathlessness',
+                content: [
+                    {
+                        subtitle: 'Simple Interventions',
+                        list: [
+                            'Sitting upright or using a handheld fan.',
+                            'Pacing activities and energy conservation.',
+                            'Breathing techniques and positioning.',
+                            'Low-dose opioids can significantly help refractory dyspnea.'
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        id: 'module-30',
+        title: 'Module 30: Common Physical Symptoms',
+        description: 'Addressing fatigue, nausea, and digestive health.',
+        sections: [
+            {
+                title: '30.1 Fatigue and Weakness',
+                content: [
+                    {
+                        subtitle: 'Cancer-Related Fatigue',
+                        text: 'Tiredness is common and real. It is multifactorial, caused by anemia, inflammation, or treatment side effects. Gentle activity, pacing, and sleep hygiene are key managers.'
+                    }
+                ]
+            },
+            {
+                title: '30.2 Nausea and Appetite',
+                content: [
+                    {
+                        subtitle: 'Comfort-Focused Eating',
+                        text: 'The goal is to help you eat and drink comfortably. In advanced stages, small sips and favorite small snacks are better than forcing large meals. Thirst is often better relieved by mouth care.'
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        id: 'module-31',
+        title: 'Module 31: Serious Illness Conversations',
+        description: 'Communication, decision-making, and planning your future.',
+        sections: [
+            {
+                title: '31.1 Decision-Making and Planning',
+                content: [
+                    {
+                        subtitle: 'What Matters Most?',
+                        text: 'Serious illness conversations help you talk about your hopes, worries, and how you want your care to look. This includes documenting advance directives and resuscitation preferences.'
+                    },
+                    {
+                        subtitle: 'Shared Journey',
+                        text: 'Ongoing conversations help ensure your care aligns with your personal values. You can change your mind as things evolve.'
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        id: 'module-32',
+        title: 'Module 32: Holistic Support (Mind & Spirit)',
+        description: 'Addressing the emotional, social, and spiritual dimensions of care.',
+        sections: [
+            {
+                title: '32.1 Beyond the Body',
+                content: [
+                    {
+                        subtitle: 'Mental Well-being',
+                        text: 'Fear, sadness, and anger are normal. Palliative care normalizes these feelings and offers counseling, support groups, or psychiatric care when needed.'
+                    },
+                    {
+                        subtitle: 'Spiritual and Social Care',
+                        text: 'Spiritual care is for everyone, independent of religion. It addresses questions of meaning and hope. Social workers assist with practicalities like benefits and transportation.'
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        id: 'module-33',
+        title: 'Module 33: Care for the Family Caregiver',
+        description: 'Support, resilience, and bereavement resources.',
+        sections: [
+            {
+                title: '33.1 Supporting the Support System',
+                content: [
+                    {
+                        subtitle: 'Caregiver Burden',
+                        text: 'Caring for a loved one is demanding. Palliative care includes routine assessment of caregiver distress and offers education, counseling, and respite care options.'
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        id: 'module-34',
+        title: 'Module 34: The Gentle Transition (End-of-Life)',
+        description: 'Focusing on comfort and dignity during the final days.',
+        sections: [
+            {
+                title: '34.1 Comfort-Directed Care',
+                content: [
+                    {
+                        subtitle: 'The Final Weeks',
+                        text: 'Focus shifts to maximizing comfort. This includes managing secretions, delirium, and anxiety while de-escalating invasive tests. Gentle touch and familiar voices remain vital.'
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        id: 'module-35',
+        title: 'Module 35: Palliative Care: Myths vs Realities',
+        description: 'Clarifying common misunderstandings about supportive care.',
+        sections: [
+            {
+                title: '35.1 Truths About Care',
+                content: [
+                    {
+                        subtitle: 'Giving Up?',
+                        text: '"Is palliative care giving up?" No—it means MORE support, not less. It works alongside your oncology team to help you live as well as possible.'
+                    },
+                    {
+                        subtitle: 'Timing',
+                        text: 'Palliative care is for the whole disease trajectory, not just for the very end of life. Starting it early is a sign of taking control.'
+                    }
+                ]
+            }
+        ]
     }
 ];

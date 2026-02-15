@@ -29,8 +29,24 @@
     z-index: 110;
 }
 
+.brand-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #eef2ff;
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    transition: all 0.2s ease;
+}
+
+.brand:hover .brand-logo {
+    background: #e0e7ff;
+    transform: scale(1.05);
+}
+
 .brand-icon {
-    color: var(--accent-primary);
+    color: #6366f1;
 }
 
 .brand-name {

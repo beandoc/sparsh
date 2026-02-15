@@ -10,9 +10,7 @@ import {
     Search,
     Hospital,
     MessageCircle,
-    Download,
     AlertCircle,
-    Printer,
     Activity,
     User,
     Scan,
@@ -181,12 +179,8 @@ const Toolkit: React.FC = () => {
                                         <p>{item.description}</p>
                                         <div className="card-actions">
                                             <button className="btn-icon-text">
-                                                <Printer size={16} />
-                                                Print
-                                            </button>
-                                            <button className="btn-icon-text secondary">
-                                                <Download size={16} />
-                                                PDF
+                                                <Activity size={16} />
+                                                Open Interactive Tool
                                             </button>
                                         </div>
                                     </div>
@@ -209,12 +203,8 @@ const Toolkit: React.FC = () => {
                                         <p>{item.description}</p>
                                         <div className="card-actions">
                                             <button className="btn-icon-text">
-                                                <Printer size={16} />
-                                                Print
-                                            </button>
-                                            <button className="btn-icon-text secondary">
-                                                <Download size={16} />
-                                                PDF
+                                                <FileText size={16} />
+                                                Read Guide
                                             </button>
                                         </div>
                                     </div>
@@ -281,8 +271,8 @@ const Toolkit: React.FC = () => {
                                         </div>
                                     </div>
                                 ))}
-                                <button className="btn btn-primary" style={{ width: '100%', marginTop: '1rem' }}>
-                                    <Download size={16} /> Save Weekly Log
+                                <button className="btn btn-primary" style={{ width: '100%', marginTop: '1rem' }} disabled>
+                                    Log Saved Locally
                                 </button>
                             </motion.div>
                         </div>
@@ -322,8 +312,8 @@ const Toolkit: React.FC = () => {
                                         <span className="pill active">Ibuprofen</span>
                                     </div>
                                 </div>
-                                <button className="btn btn-primary" style={{ width: '100%', marginTop: '1rem', background: '#ea580c', border: 'none' }}>
-                                    <Download size={16} /> Export Diary
+                                <button className="btn btn-primary" style={{ width: '100%', marginTop: '1rem', background: '#ea580c', border: 'none' }} disabled>
+                                    Diary Updated
                                 </button>
                             </div>
                         </div>

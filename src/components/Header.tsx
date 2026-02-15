@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Activity, Heart, BookOpen, Menu, X, ClipboardList, ShieldCheck } from 'lucide-react';
+import { Activity, ShieldCheck, BookOpen, Menu, X, ClipboardList } from 'lucide-react';
 import './Header.css';
 
 interface NavLinkProps {
@@ -29,7 +29,7 @@ const Header: React.FC = () => {
         { to: '/guides', icon: <ShieldCheck size={18} />, label: 'Guides' },
         { to: '/resources', icon: <BookOpen size={18} />, label: 'Resources' },
         { to: '/toolkit', icon: <ClipboardList size={18} />, label: 'Toolkit' },
-        { to: '/supportive-care', icon: <Heart size={18} />, label: 'Assistant' },
+        { to: '/supportive-care', icon: <ShieldCheck size={18} />, label: 'Assistant' },
         { to: '/education', icon: <Activity size={18} />, label: 'Education' },
     ];
 
@@ -37,7 +37,9 @@ const Header: React.FC = () => {
         <header className="header">
             <div className="header-container">
                 <Link to="/" className="brand" onClick={() => setIsMenuOpen(false)}>
-                    <Heart size={32} className="brand-icon" />
+                    <div className="brand-logo">
+                        <ShieldCheck size={28} className="brand-icon" />
+                    </div>
                     <span className="brand-name">Sparsh</span>
                 </Link>
 
@@ -54,11 +56,6 @@ const Header: React.FC = () => {
                 </nav>
 
                 <div className="header-right">
-                    <div className="auth-buttons desktop-only">
-                        <Link to="/login" className="btn btn-secondary">Login</Link>
-                        <Link to="/join" className="btn btn-primary">Get Started</Link>
-                    </div>
-
                     <button
                         className="mobile-menu-toggle"
                         onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -97,11 +94,6 @@ const Header: React.FC = () => {
                                         />
                                     </motion.div>
                                 ))}
-                            </div>
-
-                            <div className="mobile-auth-buttons">
-                                <Link to="/login" className="btn btn-secondary full-width" onClick={() => setIsMenuOpen(false)}>Login</Link>
-                                <Link to="/join" className="btn btn-primary full-width" onClick={() => setIsMenuOpen(false)}>Get Started</Link>
                             </div>
                         </div>
                     </motion.div>

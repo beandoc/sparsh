@@ -1,5 +1,5 @@
 import React from 'react';
-import { Heart, Mail, Phone, Instagram, Twitter, Linkedin } from 'lucide-react';
+import { ShieldCheck, Mail, Phone, Instagram, Twitter, Linkedin } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import './Footer.css';
 
@@ -9,7 +9,7 @@ const Footer: React.FC = () => {
             <div className="footer-content">
                 <div className="footer-section brand-section">
                     <div className="footer-brand">
-                        <Heart size={24} className="text-pink-500" />
+                        <ShieldCheck size={24} className="text-accent-primary" />
                         <span className="brand-text">Sparsh</span>
                     </div>
                     <p className="brand-tagline">
@@ -20,10 +20,9 @@ const Footer: React.FC = () => {
                 <div className="footer-section links-section">
                     <h4 className="footer-heading">Quick Links</h4>
                     <ul className="footer-links">
-                        <li><Link to="/education">Patient Education</Link></li>
-                        <li><Link to="/resources">Learning Resources</Link></li>
-                        <li><Link to="/care">Usual Care</Link></li>
-                        <li><Link to="/login">Login</Link></li>
+                        <li><Link to="/education">Academy Lessons</Link></li>
+                        <li><Link to="/resources">Guides & Lists</Link></li>
+                        <li><Link to="/supportive-care">Support Assistant</Link></li>
                     </ul>
                 </div>
 

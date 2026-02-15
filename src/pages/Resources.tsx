@@ -4,7 +4,6 @@ import Footer from '../components/Footer';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
     FileText,
-    Download,
     HelpCircle,
     Stethoscope,
     Activity,
@@ -127,23 +126,6 @@ const Resources: React.FC = () => {
                                         >
                                             {copied ? <CheckCircle2 size={16} color="var(--healing-green)" /> : <Copy size={16} />}
                                             {copied ? 'Copied' : 'Copy List'}
-                                        </button>
-                                        <button
-                                            style={{
-                                                padding: '0.6rem',
-                                                borderRadius: '8px',
-                                                background: 'var(--accent-primary)',
-                                                border: 'none',
-                                                color: 'white',
-                                                cursor: 'pointer',
-                                                display: 'flex',
-                                                alignItems: 'center',
-                                                gap: '0.5rem',
-                                                fontSize: '0.85rem'
-                                            }}
-                                        >
-                                            <Download size={16} />
-                                            PDF
                                         </button>
                                     </div>
                                 </div>
