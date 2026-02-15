@@ -21,7 +21,9 @@ import {
     Baby,
     Smile,
     UserCircle,
-    Activity
+    Activity,
+    Wind,
+    Compass
 } from 'lucide-react';
 import './Page.css';
 import './PalliativeCare.css';
@@ -56,9 +58,14 @@ const PalliativeCare: React.FC = () => {
                             <Heart size={32} />
                         </div>
                         <h2>What is Palliative Care?</h2>
+                        <div className="etymology-box">
+                            <span className="origin-label">Origin:</span>
+                            <p>Derived from the Latin <em>palliare</em>, meaning <strong>“to cloak.”</strong></p>
+                            <p className="origin-desc">Imagine an extra layer of comfort and protection shielding you from the harms associated with illness.</p>
+                        </div>
                         <p>
-                            Palliative care (pronounced <em>pal-lee-uh-tiv</em>) focuses on providing relief from the symptoms, pain and stress of a serious illness,
-                            including cancer. The goal is to improve quality of life for both the patient and loved ones.
+                            It is an extra layer of support on top of the care you already receive. It focuses on your own
+                            unique care goals in a way that aligns with your values.
                         </p>
                         <p>
                             It is appropriate at any age and at any stage in a serious illness, and you can have it along with curative treatment.
@@ -297,8 +304,53 @@ const PalliativeCare: React.FC = () => {
                     </div>
                 </section>
 
+                {/* Holistic Relief Section */}
+                <section className="holistic-relief-section">
+                    <h2 className="sub-section-title">Beyond Medication: Holistic Relief</h2>
+                    <div className="holistic-grid">
+                        <div className="glass-panel h-item">
+                            <Wind className="h-icon" />
+                            <h4>Mind-Body Techniques</h4>
+                            <p>Learning breathing and relaxation exercises to manage anxiety and shortness of breath.</p>
+                        </div>
+                        <div className="glass-panel h-item">
+                            <Compass className="h-icon" />
+                            <h4>Symptom Education</h4>
+                            <p>Tips for improving sleep hygiene, cognitive exercises, and fatigue management strategies.</p>
+                        </div>
+                    </div>
+                </section>
+
+                {/* Getting Started Roadmap */}
+                <section className="roadmap-section">
+                    <h2 className="sub-section-title">A 4-Step Roadmap to Your Care</h2>
+                    <div className="roadmap-grid">
+                        <div className="roadmap-step">
+                            <div className="step-num">1</div>
+                            <h4>Talk to Your Doctor</h4>
+                            <p>Ask for a referral. Specifically bring up how palliative care can help manage your current symptoms.</p>
+                        </div>
+                        <div className="roadmap-step">
+                            <div className="step-num">2</div>
+                            <h4>Find a Provider</h4>
+                            <p>Use directories like GetPalliativeCare.org to find trusted specialists in your ZIP code and setting.</p>
+                        </div>
+                        <div className="roadmap-step">
+                            <div className="step-num">3</div>
+                            <h4>Schedule & Attend</h4>
+                            <p>Encourage loved ones to attend. Confirm they are in-network (most insurance, Medicare, & VA covers it).</p>
+                        </div>
+                        <div className="roadmap-step">
+                            <div className="step-num">4</div>
+                            <h4>Assess Your Goals</h4>
+                            <p>The team will spend time getting to know you to develop a care plan that aligns with your life goals.</p>
+                        </div>
+                    </div>
+                </section>
+
                 {/* Barriers Section */}
                 <section className="barriers-section">
+
                     <h2 className="sub-section-title">Overcoming Barriers</h2>
                     <div className="barriers-grid">
                         <div className="barrier-item">
