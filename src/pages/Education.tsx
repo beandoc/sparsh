@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ChevronDown, ChevronUp, Book, User, Activity, DollarSign } from 'lucide-react';
+import { ChevronDown, ChevronUp, Book, User, Activity, DollarSign, Brain, Heart, Users, ShieldCheck } from 'lucide-react';
 import { education_modules } from '../data/educationModules';
 import type { ModuleContent } from '../data/educationModules';
 import './Page.css';
@@ -60,8 +60,14 @@ const ModuleCard = ({ module, isExpanded, onToggle, index }: { module: ModuleCon
                     <div className="module-icon">
                         {index === 0 && <Book size={24} />}
                         {index === 1 && <User size={24} />}
-                        {index === 2 && <Activity size={24} />}
+                        {index === 2 && <Brain size={24} />}
                         {index === 3 && <DollarSign size={24} />}
+                        {index === 4 && <Activity size={24} />}
+                        {index === 5 && <Heart size={24} />}
+                        {index === 6 && <Users size={24} />}
+                        {index === 7 && <Heart size={24} />}
+                        {index === 8 && <Users size={24} />}
+                        {index === 9 && <ShieldCheck size={24} />}
                     </div>
                     <div>
                         <h2 className="module-title">{module.title}</h2>
