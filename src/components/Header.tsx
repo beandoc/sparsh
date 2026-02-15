@@ -25,7 +25,8 @@ const Header: React.FC = () => {
                 <nav className="nav-desktop">
                     <NavLink to="/resources" icon={<BookOpen size={18} />} label="Resources" active={location.pathname.startsWith('/resources')} />
                     <NavLink to="/education" icon={<Activity size={18} />} label="Education" active={location.pathname.startsWith('/education')} />
-                    <NavLink to="/care" icon={<Heart size={18} />} label="Usual Care" active={location.pathname.startsWith('/care')} />
+                    <NavLink to="/palliative-care" icon={<Heart size={18} />} label="Palliative" active={location.pathname.startsWith('/palliative-care')} />
+                    <NavLink to="/care" icon={<Activity size={18} />} label="Usual Care" active={location.pathname.startsWith('/care')} />
                 </nav>
 
                 <div className="auth-buttons">

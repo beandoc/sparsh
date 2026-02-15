@@ -3,6 +3,7 @@ import Landing from './pages/Landing';
 import Resources from './pages/Resources';
 import Education from './pages/Education';
 import Care from './pages/Care';
+import PalliativeCare from './pages/PalliativeCare';
 
 function App() {
   return (
@@ -12,7 +13,7 @@ function App() {
         <Route path="/resources" element={<Resources />} />
         <Route path="/education" element={<Education />} />
         <Route path="/care" element={<Care />} />
-        {/* Fallback route or 404 can be added later */}
+        <Route path="/palliative-care" element={<PalliativeCare />} />
       </Routes>
     </Router>
   );
