@@ -17,12 +17,12 @@
 }
 
 .hero-container {
-    max-width: 1280px;
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 0 40px;
+    padding: 0 2rem;
     display: grid;
     grid-template-columns: 1.1fr 0.9fr;
-    gap: 80px;
+    gap: 4rem;
     align-items: center;
 }
 
@@ -50,7 +50,7 @@
 }
 
 .hero-title-v2 {
-    font-size: 4.5rem;
+    font-size: clamp(2.5rem, 5vw, 4.5rem);
     line-height: 1.1;
     font-weight: 800;
     color: #0f172a;
@@ -170,7 +170,7 @@
 
 .features-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 32px;
 }
 

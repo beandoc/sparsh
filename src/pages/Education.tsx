@@ -1,6 +1,4 @@
 import React, { useState } from 'react';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
     ChevronDown, ChevronUp, Book, User, Activity, DollarSign, Brain, Heart, Users,
@@ -54,7 +52,6 @@ const Education: React.FC = () => {
 
     return (
         <div className="page-container education-page">
-            <Header />
             <main className="main-content">
                 <header className="education-header">
                     <motion.div
@@ -144,7 +141,6 @@ const Education: React.FC = () => {
                     )}
                 </div>
             </main>
-            <Footer />
         </div>
     );
 };

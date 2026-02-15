@@ -110,6 +110,28 @@
     flex-wrap: wrap;
 }
 
+@media (max-width: 640px) {
+    .phase-navigation {
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        padding-bottom: 1rem;
+        -webkit-overflow-scrolling: touch;
+        margin-left: -1rem;
+        margin-right: -1rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .phase-btn {
+        white-space: nowrap;
+    }
+
+    .phase-navigation::-webkit-scrollbar {
+        display: none;
+    }
+}
+
 .phase-btn {
     padding: 0.6rem 1.2rem;
     border-radius: 100px;

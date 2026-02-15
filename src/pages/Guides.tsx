@@ -1,6 +1,4 @@
 import React, { useState } from 'react';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
 import { motion, AnimatePresence } from 'framer-motion';
 import { support_guides, guideIconMap } from '../data/supportGuides';
 import { ChevronRight, ExternalLink } from 'lucide-react';
@@ -14,7 +12,6 @@ const Guides: React.FC = () => {
 
     return (
         <div className="page-container">
-            <Header />
             <main className="main-content">
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
@@ -101,7 +98,6 @@ const Guides: React.FC = () => {
                     </div>
                 </div>
             </main>
-            <Footer />
 
             <style>{`
                 .guides-header {

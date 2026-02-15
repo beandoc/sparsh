@@ -11,6 +11,28 @@
     flex-wrap: wrap;
 }
 
+@media (max-width: 640px) {
+    .category-nav {
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        padding-bottom: 1rem;
+        -webkit-overflow-scrolling: touch;
+        margin-left: -1rem;
+        margin-right: -1rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .cat-tab {
+        white-space: nowrap;
+    }
+
+    .category-nav::-webkit-scrollbar {
+        display: none;
+    }
+}
+
 .cat-tab {
     display: flex;
     align-items: center;

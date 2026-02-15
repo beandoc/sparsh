@@ -1,6 +1,4 @@
 import React, { useState } from 'react';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
     ClipboardList,
@@ -129,7 +127,6 @@ const Toolkit: React.FC = () => {
 
     return (
         <div className="page-container">
-            <Header />
             <main className="main-content">
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
@@ -334,7 +331,6 @@ const Toolkit: React.FC = () => {
                     </div>
                 </section>
             </main>
-            <Footer />
         </div>
     );
 };

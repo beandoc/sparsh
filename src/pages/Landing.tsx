@@ -1,8 +1,5 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
 import {
     ArrowRight,
     ShieldCheck,
@@ -18,7 +15,6 @@ import './Landing.css';
 const Landing: React.FC = () => {
     return (
         <div className="landing-page">
-            <Header />
 
             {/* Premium Hero Section */}
             <section className="hero-section premium">
@@ -181,8 +177,6 @@ const Landing: React.FC = () => {
                     </Link>
                 </div>
             </section>
-
-            <Footer />
         </div>
     );
 };

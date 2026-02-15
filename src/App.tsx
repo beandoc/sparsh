@@ -9,20 +9,24 @@ import Toolkit from './pages/Toolkit';
 import SupportiveOncology from './pages/SupportiveOncology';
 import Guides from './pages/Guides';
 
+import Layout from './components/Layout';
+
 function App() {
   return (
     <Router>
-      <Routes>
-        <Route path="/" element={<Landing />} />
-        <Route path="/resources" element={<Resources />} />
-        <Route path="/education" element={<Education />} />
-        <Route path="/care" element={<Care />} />
-        <Route path="/palliative-care" element={<PalliativeCare />} />
-        <Route path="/cancer-overview" element={<CancerOverview />} />
-        <Route path="/toolkit" element={<Toolkit />} />
-        <Route path="/supportive-care" element={<SupportiveOncology />} />
-        <Route path="/guides" element={<Guides />} />
-      </Routes>
+      <Layout>
+        <Routes>
+          <Route path="/" element={<Landing />} />
+          <Route path="/resources" element={<Resources />} />
+          <Route path="/education" element={<Education />} />
+          <Route path="/care" element={<Care />} />
+          <Route path="/palliative-care" element={<PalliativeCare />} />
+          <Route path="/cancer-overview" element={<CancerOverview />} />
+          <Route path="/toolkit" element={<Toolkit />} />
+          <Route path="/supportive-care" element={<SupportiveOncology />} />
+          <Route path="/guides" element={<Guides />} />
+        </Routes>
+      </Layout>
     </Router>
   );
 }

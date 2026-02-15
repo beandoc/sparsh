@@ -1,6 +1,4 @@
 import React, { useState } from 'react';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
     FileText,
@@ -40,7 +38,6 @@ const Resources: React.FC = () => {
 
     return (
         <div className="page-container">
-            <Header />
             <main className="main-content">
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
@@ -172,12 +169,35 @@ const Resources: React.FC = () => {
                     </div>
                 </div>
             </main>
-            <Footer />
 
             <style>{`
                 @media (max-width: 1024px) {
+                    .resources-layout {
+                        grid-template-columns: 1fr !important;
+                    }
+                    .resources-sidebar {
+                        display: flex;
+                        overflow-x: auto;
+                        padding-bottom: 1rem;
+                        gap: 0.5rem;
+                        -webkit-overflow-scrolling: touch;
+                        position: sticky;
+                        top: 0;
+                        background: white;
+                        z-index: 10;
+                        margin: -1rem -1rem 2rem;
+                        padding: 1rem;
+                        border-bottom: 1px solid var(--bg-tertiary);
+                    }
                     .resources-sidebar button {
                         white-space: nowrap;
+                        flex-shrink: 0;
+                    }
+                    .resources-sidebar::-webkit-scrollbar {
+                        display: none;
+                    }
+                    .resource-content {
+                        padding-top: 0;
                     }
                 }
             `}</style>

@@ -1,6 +1,4 @@
 import React, { useState } from 'react';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
     Heart,
@@ -65,7 +63,6 @@ const SupportiveOncology: React.FC = () => {
 
     return (
         <div className="page-container supportive-page">
-            <Header />
             <main className="main-content">
                 <motion.div
                     className="supportive-header"
@@ -261,7 +258,6 @@ const SupportiveOncology: React.FC = () => {
                     </div>
                 )}
             </main>
-            <Footer />
         </div>
     );
 };
