@@ -1,0 +1,258 @@
+.toolkit-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.tab-navigation {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 3rem;
+}
+
+.tab-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem 2rem;
+    border-radius: 100px;
+    border: 1px solid var(--bg-tertiary);
+    background: white;
+    color: var(--text-secondary);
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.tab-btn:hover {
+    border-color: var(--accent-subtle);
+    background: var(--bg-secondary);
+}
+
+.tab-btn.active {
+    background: var(--accent-primary);
+    color: white;
+    border-color: var(--accent-primary);
+    box-shadow: 0 10px 15px -3px rgba(99, 102, 241, 0.3);
+}
+
+.toolkit-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.toolkit-card {
+    display: flex;
+    gap: 1.5rem;
+    padding: 2rem !important;
+    transition: transform 0.3s ease;
+}
+
+.toolkit-card:hover {
+    transform: translateY(-5px);
+}
+
+.item-icon {
+    width: 56px;
+    height: 56px;
+    background: #f0fdf4;
+    color: #16a34a;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.item-icon.accent {
+    background: #eff6ff;
+    color: #2563eb;
+}
+
+.item-body h3 {
+    margin: 0 0 0.5rem;
+    font-size: 1.1rem;
+    font-weight: 800;
+}
+
+.item-body p {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+}
+
+.card-actions {
+    display: flex;
+    gap: 0.75rem;
+}
+
+.btn-icon-text {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    border: none;
+    background: var(--bg-secondary);
+    color: var(--text-primary);
+    font-size: 0.8rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.btn-icon-text:hover {
+    background: var(--bg-tertiary);
+}
+
+.btn-icon-text.secondary {
+    background: white;
+    border: 1px solid var(--bg-tertiary);
+}
+
+/* Featured Section */
+.toolkit-featured {
+    padding: 4rem !important;
+    margin-bottom: 6rem;
+}
+
+.featured-content {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.symptom-check-list {
+    list-style: none;
+    padding: 0;
+    margin: 2rem 0;
+}
+
+.symptom-check-list li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+}
+
+.symptom-check-list li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--accent-primary);
+    font-weight: bold;
+}
+
+.alert-box {
+    display: flex;
+    gap: 1rem;
+    background: #fff7ed;
+    border: 1px solid #ffedd5;
+    padding: 1.25rem;
+    border-radius: 12px;
+    color: #9a3412;
+    font-size: 0.9rem;
+}
+
+.alert-box strong {
+    color: #7c2d12;
+}
+
+/* Day Picker Interactive */
+.day-picker {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 24px;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.05);
+}
+
+.side-effect-interactive {
+    margin-bottom: 2rem;
+}
+
+.se-label {
+    font-weight: 800;
+    margin-bottom: 1rem;
+    color: var(--text-primary);
+}
+
+.grading-pills {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.pill {
+    flex: 1;
+    text-align: center;
+    padding: 0.5rem;
+    border-radius: 6px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    background: var(--bg-secondary);
+    color: var(--text-secondary);
+    border: 1px solid var(--bg-tertiary);
+}
+
+.pill.active {
+    background: #dcfce7;
+    color: #15803d;
+    border-color: #86efac;
+}
+
+.pill.active.warning {
+    background: #fee2e2;
+    color: #b91c1c;
+    border-color: #fca5a5;
+}
+
+.se-desc {
+    font-size: 0.8rem;
+    font-style: italic;
+    color: var(--text-secondary);
+}
+
+/* Radiation Specific Areas */
+.radiation-area-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.area-btn {
+    padding: 1.5rem;
+    background: white;
+    border: 1px solid var(--bg-tertiary);
+    border-radius: 16px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.area-btn:hover,
+.area-btn.active {
+    border-color: var(--accent-primary);
+    background: #f5f3ff;
+    transform: scale(1.02);
+}
+
+.area-btn h4 {
+    margin: 0.75rem 0 0;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 900px) {
+    .featured-content {
+        grid-template-columns: 1fr;
+    }
+
+    .acp-checklist {
+        grid-template-columns: 1fr;
+    }
+}

@@ -5,6 +5,7 @@ import Education from './pages/Education';
 import Care from './pages/Care';
 import PalliativeCare from './pages/PalliativeCare';
 import CancerOverview from './pages/CancerOverview';
+import Toolkit from './pages/Toolkit';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/care" element={<Care />} />
         <Route path="/palliative-care" element={<PalliativeCare />} />
         <Route path="/cancer-overview" element={<CancerOverview />} />
+        <Route path="/toolkit" element={<Toolkit />} />
       </Routes>
     </Router>
   );
