@@ -28,7 +28,11 @@ import {
     MinusCircle,
     MapPin,
     Users2,
-    PieChart
+    PieChart,
+    ListChecks,
+    BookOpen,
+    Thermometer,
+    Layout
 } from 'lucide-react';
 import './Page.css';
 import './PalliativeCare.css';
@@ -72,6 +76,10 @@ const PalliativeCare: React.FC = () => {
                             It is an extra layer of support on top of the care you already receive. It focuses on your own
                             unique care goals in a way that aligns with your values.
                         </p>
+                        <div className="clinical-badge">
+                            <BookOpen size={16} />
+                            <span>Recommended within <strong>8 weeks</strong> of diagnosis (ASCO)</span>
+                        </div>
                         <p>
                             It is appropriate at any age and at any stage in a serious illness, and you can have it along with curative treatment.
                         </p>
@@ -232,8 +240,103 @@ const PalliativeCare: React.FC = () => {
                     </motion.section>
                 </div>
 
+                {/* Advanced Symptom Management Hub */}
+                <section className="clinical-standards-section">
+                    <h2 className="sub-section-title">Clinical Management Standards</h2>
+                    <div className="standards-grid">
+                        {/* The Analgesic Ladder */}
+                        <motion.div className="glass-panel ladder-card" initial={{ opacity: 0, x: -20 }} whileInView={{ opacity: 1, x: 0 }}>
+                            <div className="section-icon-row">
+                                <Thermometer size={24} />
+                                <h3>The Analgesic Ladder (WHO)</h3>
+                            </div>
+                            <p className="ladder-desc">A sequential 3-step strategy for optimal pain control:</p>
+                            <div className="ladder-visual">
+                                <div className="step step-3">
+                                    <span className="step-label">Step 3: Severe Pain</span>
+                                    <span className="step-content">Strong Opioids (Morphine, Oxycodone, Fentanyl)</span>
+                                </div>
+                                <div className="step step-2">
+                                    <span className="step-label">Step 2: Moderate Pain</span>
+                                    <span className="step-content">Weak Opioids (Codeine, Tramadol) + Non-Opioids</span>
+                                </div>
+                                <div className="step step-1">
+                                    <span className="step-label">Step 1: Mild Pain</span>
+                                    <span className="step-content">Non-Opioids (Acetaminophen, NSAIDs)</span>
+                                </div>
+                            </div>
+                            <div className="clinical-note">
+                                <strong>NCCN Guideline:</strong> Patients should be screened for pain at <em>every</em> contact.
+                            </div>
+                        </motion.div>
+
+                        {/* Specialist Interventions */}
+                        <motion.div className="glass-panel" initial={{ opacity: 0, x: 20 }} whileInView={{ opacity: 1, x: 0 }}>
+                            <div className="section-icon-row">
+                                <Layout size={24} />
+                                <h3>Complex Symptom Strategies</h3>
+                            </div>
+                            <div className="symptom-accordion">
+                                <details>
+                                    <summary>Dyspnea (Shortness of Breath)</summary>
+                                    <div className="details-content">
+                                        <p>Management focuses on both physical and emotional needs:</p>
+                                        <ul>
+                                            <li><strong>For Hypoxia:</strong> Oxygen therapy and fans/cooler airflow.</li>
+                                            <li><strong>For Anxiety:</strong> Benzodiazepines as adjunct to morphine.</li>
+                                            <li><strong>Secretions:</strong> Use of scopolamine near end-of-life.</li>
+                                        </ul>
+                                    </div>
+                                </details>
+                                <details>
+                                    <summary>Nutrition & Cachexia</summary>
+                                    <div className="details-content">
+                                        <p>Focus on patient goals and comfort:</p>
+                                        <ul>
+                                            <li><strong>Appetite:</strong> Short-term corticosteroids or progestins.</li>
+                                            <li><strong>Ethical Note:</strong> Withholding/withdrawing nutrition is permissible and may improve comfort in advanced stages.</li>
+                                            <li><strong>Normalcy:</strong> Absence of hunger/thirst is biological in advanced cancer.</li>
+                                        </ul>
+                                    </div>
+                                </details>
+                                <details>
+                                    <summary>Palliative Sedation</summary>
+                                    <div className="details-content">
+                                        <p>For refractory distress that cannot be controlled otherwise:</p>
+                                        <ul>
+                                            <li>Reserved for very terminal stages (hours to days).</li>
+                                            <li>Uses the lowest level of sedation necessary for relief.</li>
+                                            <li>Multidisciplinary evaluation is mandatory.</li>
+                                        </ul>
+                                    </div>
+                                </details>
+                            </div>
+                        </motion.div>
+                    </div>
+                </section>
+
+                {/* Advanced Care Planning */}
+                <section className="advanced-planning-section">
+                    <div className="glass-panel acp-card">
+                        <div className="acp-header">
+                            <ListChecks size={32} />
+                            <div>
+                                <h2>Advanced Care Planning</h2>
+                                <p>Essential documents to discuss with your oncology team early.</p>
+                            </div>
+                        </div>
+                        <div className="acp-checklist">
+                            <div className="check-item"><div className="dot"></div> <span><strong>Code Status:</strong> Your preferences for resuscitation (CPR/Intubation).</span></div>
+                            <div className="check-item"><div className="dot"></div> <span><strong>Living Wills:</strong> Instructions for medical care if you cannot speak.</span></div>
+                            <div className="check-item"><div className="dot"></div> <span><strong>Advanced Directives:</strong> Legally appointing a health care surrogate/proxy.</span></div>
+                            <div className="check-item"><div className="dot"></div> <span><strong>DNR Orders:</strong> Out-of-hospital "Do Not Resuscitate" documentation.</span></div>
+                        </div>
+                    </div>
+                </section>
+
                 {/* Equity and Awareness Gaps */}
                 <section className="awareness-gap-section glass-panel">
+
                     <div className="equity-content">
                         <div className="text-content">
                             <div className="badge secondary">Awareness & Equity</div>
