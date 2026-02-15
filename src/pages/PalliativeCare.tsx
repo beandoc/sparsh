@@ -13,7 +13,15 @@ import {
     CheckCircle2,
     ArrowRightLeft,
     HandHeart,
-    Flame
+    Flame,
+    TrendingUp,
+    Home,
+    MessageSquare,
+    DollarSign,
+    Baby,
+    Smile,
+    UserCircle,
+    Activity
 } from 'lucide-react';
 import './Page.css';
 import './PalliativeCare.css';
@@ -191,6 +199,101 @@ const PalliativeCare: React.FC = () => {
                             <strong> within 8 weeks</strong> of a cancer diagnosis to establish a baseline of support
                             and quality-of-life management.
                         </p>
+                    </div>
+                </section>
+
+                {/* Benefits Section */}
+                <section className="benefits-section-new">
+                    <h2 className="sub-section-title">The Benefits of Integrated Support</h2>
+                    <div className="benefits-layout">
+                        <motion.div className="benefit-card" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }}>
+                            <TrendingUp className="b-icon" />
+                            <h3>Extended Survival</h3>
+                            <p>Recent studies suggest that starting palliative care soon after a cancer diagnosis may actually extend survival.</p>
+                        </motion.div>
+                        <motion.div className="benefit-card" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }}>
+                            <Activity className="b-icon" />
+                            <h3>Symptom Mastery</h3>
+                            <p>People report less severe pain, shortness of breath, depression, and nausea through expert management.</p>
+                        </motion.div>
+                        <motion.div className="benefit-card" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }}>
+                            <ShieldCheck className="b-icon" />
+                            <h3>Reduced Hospitalization</h3>
+                            <p>Patients spend less time in the ICU and ER, and are less likely to be re-admitted after going home.</p>
+                        </motion.div>
+                    </div>
+                </section>
+
+                {/* Age Specific Needs */}
+                <section className="age-needs-section">
+                    <h2 className="sub-section-title">Care Across the Lifespan</h2>
+                    <div className="age-grid">
+                        <div className="age-card child">
+                            <Baby className="icon" />
+                            <h4>Children</h4>
+                            <ul>
+                                <li>Dealing with fear and anxiety</li>
+                                <li>Reducing isolation from friends/school</li>
+                                <li>Age-appropriate illness explanation</li>
+                            </ul>
+                        </div>
+                        <div className="age-card teen">
+                            <Smile className="icon" />
+                            <h4>Teens & Young Adults</h4>
+                            <ul>
+                                <li>Balancing independence with parental support</li>
+                                <li>Concerns about dating, careers, and future</li>
+                                <li>Integrating into clinical settings with peers</li>
+                            </ul>
+                        </div>
+                        <div className="age-card senior">
+                            <UserCircle className="icon" />
+                            <h4>Older Adults</h4>
+                            <ul>
+                                <li>Managing multiple chronic health problems</li>
+                                <li>Addressing lower energy and functional levels</li>
+                                <li>Higher risk for severe treatment side effects</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                {/* Where Care Happens */}
+                <section className="location-section glass-panel">
+                    <div className="location-content">
+                        <h2><Home size={32} /> Wherever You Call Home</h2>
+                        <p>
+                            Palliative care is flexible. You can receive it in the hospital, at cancer centers,
+                            outpatient clinics, or your own residence—including nursing homes and assisted living.
+                        </p>
+                        <div className="location-tags">
+                            <span>Your House</span>
+                            <span>Care Facilities</span>
+                            <span>In-Patient Units</span>
+                        </div>
+                    </div>
+                </section>
+
+                {/* FAQ / Insurance and Advocating */}
+                <section className="practical-matters">
+                    <div className="split-grid">
+                        <div className="glass-panel">
+                            <h3><DollarSign size={24} /> Insurance & Costs</h3>
+                            <p>Most private plans, Medicaid, Medicare, and VA coverage include palliative care services.</p>
+                            <div className="alert-tip">
+                                <strong>Self-Advocacy:</strong> If your team doesn't bring it up, you or your family
+                                can explicitly ask for a palliative referral.
+                            </div>
+                        </div>
+                        <div className="glass-panel">
+                            <h3><MessageSquare size={24} /> Questions to Ask</h3>
+                            <ul className="faq-list">
+                                <li>Who will be part of my specific team?</li>
+                                <li>Will my insurance cover these visits?</li>
+                                <li>How will you communicate with my oncologist?</li>
+                                <li>What happens if my symptoms get worse?</li>
+                            </ul>
+                        </div>
                     </div>
                 </section>
 
