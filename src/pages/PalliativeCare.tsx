@@ -10,7 +10,10 @@ import {
     Clock,
     Globe,
     AlertCircle,
-    CheckCircle2
+    CheckCircle2,
+    ArrowRightLeft,
+    HandHeart,
+    Flame
 } from 'lucide-react';
 import './Page.css';
 import './PalliativeCare.css';
@@ -138,6 +141,58 @@ const PalliativeCare: React.FC = () => {
                         </div>
                     </div>
                 </motion.section>
+
+                {/* Palliative vs Hospice Section */}
+                <section className="comparison-section">
+                    <div className="section-header-centered">
+                        <ArrowRightLeft className="header-icon" />
+                        <h2 className="sub-section-title">Palliative vs. Hospice Care</h2>
+                        <p className="section-subtitle">While they share the goal of quality of life, they serve different stages of the journey.</p>
+                    </div>
+
+                    <div className="comparison-container">
+                        <div className="comparison-card palliative-side">
+                            <div className="card-top">
+                                <HandHeart className="icon" />
+                                <h3>Palliative Care</h3>
+                            </div>
+                            <div className="card-body">
+                                <p className="timing"><strong>When?</strong> At any stage of a serious illness, often at diagnosis.</p>
+                                <ul className="feature-list">
+                                    <li>Can be given alongside curative treatments.</li>
+                                    <li>Continues after treatment ends if needed.</li>
+                                    <li>Team works with all your existing providers.</li>
+                                    <li>Standard part of comprehensive cancer care.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div className="comparison-card hospice-side">
+                            <div className="card-top">
+                                <Flame className="icon" />
+                                <h3>Hospice Care</h3>
+                            </div>
+                            <div className="card-body">
+                                <p className="timing"><strong>When?</strong> During the last phase of an incurable illness or near end of life.</p>
+                                <ul className="feature-list">
+                                    <li>Given when there is no active/curative treatment.</li>
+                                    <li>Focuses purely on symptom and side-effect management.</li>
+                                    <li>Hospice team manages the majority of daily care.</li>
+                                    <li>Often includes palliative care as part of the service.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="glass-panel experts-tip">
+                        <h4><ShieldCheck size={20} /> Professional Recommendation</h4>
+                        <p>
+                            Experts suggest people with advanced cancer should meet with palliative care
+                            <strong> within 8 weeks</strong> of a cancer diagnosis to establish a baseline of support
+                            and quality-of-life management.
+                        </p>
+                    </div>
+                </section>
 
                 {/* Barriers Section */}
                 <section className="barriers-section">
